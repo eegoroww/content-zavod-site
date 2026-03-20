@@ -1,4 +1,116 @@
 <!DOCTYPE html>
-<html><head><title>Content Zavod</title></head>
-<body><h1>Content Zavod</h1><p>Content management tool for scheduling and posting short-form videos.</p></body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Zavod — Social Media Automation Platform</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #0f0f1a; color: #e0e0e0; line-height: 1.6; }
+        .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 60px 20px; text-align: center; border-bottom: 1px solid #2a2a4a; }
+        .header h1 { font-size: 2.5rem; color: #ffffff; margin-bottom: 10px; }
+        .header p { font-size: 1.2rem; color: #a0a0c0; max-width: 600px; margin: 0 auto; }
+        .nav { display: flex; justify-content: center; gap: 30px; padding: 20px; background: #12121f; border-bottom: 1px solid #2a2a4a; }
+        .nav a { color: #7b8cde; text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
+        .nav a:hover { color: #a5b4fc; }
+        .content { max-width: 900px; margin: 0 auto; padding: 50px 20px; }
+        .section { margin-bottom: 50px; }
+        .section h2 { font-size: 1.5rem; color: #a5b4fc; margin-bottom: 15px; border-bottom: 1px solid #2a2a4a; padding-bottom: 10px; }
+        .section p { color: #b0b0c8; margin-bottom: 12px; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 20px; }
+        .feature-card { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 10px; padding: 25px; }
+        .feature-card h3 { color: #7b8cde; margin-bottom: 8px; }
+        .feature-card p { color: #9090a8; font-size: 0.9rem; }
+        .footer { text-align: center; padding: 30px 20px; color: #606080; font-size: 0.85rem; border-top: 1px solid #2a2a4a; }
+        .footer a { color: #7b8cde; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Content Zavod</h1>
+        <p>Automated social media content distribution platform for businesses and content creators</p>
+    </div>
+
+    <div class="nav">
+        <a href="/content-zavod-site/">Home</a>
+        <a href="/content-zavod-site/privacy.html">Privacy Policy</a>
+        <a href="/content-zavod-site/terms.html">Terms of Service</a>
+        <a href="mailto:eegoroww@gmail.com">Contact</a>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <h2>About Content Zavod</h2>
+            <p>Content Zavod is a professional social media automation platform designed to help businesses and content creators manage and distribute video content across multiple social media platforms efficiently and at scale.</p>
+            <p>Our platform enables users to schedule, manage, and automatically publish short-form vertical video content (Shorts, Reels, Clips) to YouTube, VK, TikTok, and Instagram from a single unified dashboard.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Features</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Multi-Platform Publishing</h3>
+                    <p>Distribute content to YouTube Shorts, VK Clips, TikTok, and Instagram Reels simultaneously from one interface.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Smart Scheduling</h3>
+                    <p>Plan your content calendar weeks in advance with intelligent scheduling that optimizes posting times for maximum engagement.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Cloud Storage Integration</h3>
+                    <p>Seamless integration with cloud storage services for centralized video management.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Visual Calendar</h3>
+                    <p>Interactive calendar view showing your complete posting schedule with color-coded content categories.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Description Generation</h3>
+                    <p>Automated unique description generation with customizable templates for each content category.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Analytics &amp; Logging</h3>
+                    <p>Comprehensive posting logs and status tracking to monitor content distribution across all platforms.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>How It Works</h2>
+            <p>1. <strong>Upload</strong> your video content to cloud storage organized by content category.</p>
+            <p>2. <strong>Plan</strong> your posting schedule using our visual calendar — set dates, assign videos to accounts, and preview your content plan.</p>
+            <p>3. <strong>Publish</strong> — Content Zavod automatically distributes your videos to all connected platforms at the scheduled times with unique descriptions.</p>
+            <p>4. <strong>Monitor</strong> — Track posting status, view logs, and ensure all content is delivered successfully.</p>
+        </div>
+
+        <div class="section">
+            <h2>Supported Platforms</h2>
+            <p>Content Zavod currently supports the following social media platforms:</p>
+            <p><strong>YouTube</strong> — Upload as YouTube Shorts via YouTube Data API v3</p>
+            <p><strong>VK</strong> — Post as VK Clips to communities and personal pages</p>
+            <p><strong>TikTok</strong> — Publish videos via TikTok Content Posting API</p>
+            <p><strong>Instagram</strong> — Share as Instagram Reels via Instagram Graph API</p>
+        </div>
+
+        <div class="section">
+            <h2>Data &amp; Privacy</h2>
+            <p>Content Zavod is committed to protecting user privacy and handling data responsibly. We only access the minimum data required to provide our services — specifically, the ability to upload and publish video content on your behalf to the platforms you authorize.</p>
+            <p>For full details, please review our <a href="/content-zavod-site/privacy.html" style="color: #7b8cde;">Privacy Policy</a> and <a href="/content-zavod-site/terms.html" style="color: #7b8cde;">Terms of Service</a>.</p>
+        </div>
+
+        <div class="section">
+            <h2>Contact Us</h2>
+            <p>For questions, support, or business inquiries, please reach out to us:</p>
+            <p>Email: <a href="mailto:eegoroww@gmail.com" style="color: #7b8cde;">eegoroww@gmail.com</a></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025&ndash;2026 Content Zavod. All rights reserved.</p>
+        <p style="margin-top: 8px;">
+            <a href="/content-zavod-site/privacy.html">Privacy Policy</a> &middot;
+            <a href="/content-zavod-site/terms.html">Terms of Service</a>
+        </p>
+    </div>
+</body>
 </html>
