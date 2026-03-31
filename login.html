@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In — Content Zavod</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #0f0f1a; color: #e0e0e0; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+        .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 30px 20px; text-align: center; border-bottom: 1px solid #2a2a4a; }
+        .header h1 { font-size: 1.8rem; color: #ffffff; }
+        .nav { display: flex; justify-content: center; gap: 30px; padding: 20px; background: #12121f; border-bottom: 1px solid #2a2a4a; align-items: center; }
+        .nav a { color: #7b8cde; text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
+        .nav a:hover { color: #a5b4fc; }
+        .login-container { flex: 1; display: flex; align-items: center; justify-content: center; padding: 40px 20px; }
+        .login-box { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 12px; padding: 40px; width: 100%; max-width: 420px; }
+        .login-box h2 { color: #a5b4fc; margin-bottom: 8px; font-size: 1.5rem; text-align: center; }
+        .login-box .subtitle { color: #9090a8; text-align: center; margin-bottom: 30px; font-size: 0.9rem; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; color: #b0b0c8; margin-bottom: 6px; font-size: 0.9rem; }
+        .form-group input { width: 100%; padding: 12px 14px; background: #12121f; border: 1px solid #2a2a4a; border-radius: 8px; color: #e0e0e0; font-size: 1rem; outline: none; transition: border-color 0.2s; }
+        .form-group input:focus { border-color: #7b8cde; }
+        .login-btn { width: 100%; padding: 12px; background: #7b8cde; color: #fff; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.2s; margin-top: 10px; }
+        .login-btn:hover { background: #6a7bd4; }
+        .divider { text-align: center; color: #606080; margin: 25px 0; font-size: 0.85rem; position: relative; }
+        .divider::before, .divider::after { content: ''; position: absolute; top: 50%; width: 40%; height: 1px; background: #2a2a4a; }
+        .divider::before { left: 0; }
+        .divider::after { right: 0; }
+        .social-login { display: flex; flex-direction: column; gap: 12px; }
+        .social-btn { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 12px; border: 1px solid #2a2a4a; border-radius: 8px; background: #12121f; color: #b0b0c8; font-size: 0.95rem; cursor: pointer; transition: border-color 0.2s, background 0.2s; text-decoration: none; }
+        .social-btn:hover { border-color: #7b8cde; background: #1a1a2e; }
+        .footer { text-align: center; padding: 20px; color: #606080; font-size: 0.85rem; border-top: 1px solid #2a2a4a; }
+        .footer a { color: #7b8cde; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Content Zavod</h1>
+    </div>
+
+    <div class="nav">
+        <a href="/content-zavod-site/">Home</a>
+        <a href="/content-zavod-site/privacy.html">Privacy Policy</a>
+        <a href="/content-zavod-site/terms.html">Terms of Service</a>
+        <a href="mailto:eegoroww@gmail.com">Contact</a>
+        <a href="/content-zavod-site/login.html" style="background:#7b8cde;color:#fff;padding:6px 18px;border-radius:6px;font-weight:600;">Log In</a>
+    </div>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Sign in to manage your content publishing</p>
+
+            <form onsubmit="event.preventDefault(); alert('Please use the desktop application to manage your content.');">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Your password" required>
+                </div>
+                <button type="submit" class="login-btn">Log In</button>
+            </form>
+
+            <div class="divider">or continue with</div>
+
+            <div class="social-login">
+                <a href="#" class="social-btn" onclick="event.preventDefault(); alert('TikTok login is available in the desktop application.');">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.78a8.18 8.18 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.21z"/></svg>
+                    Continue with TikTok
+                </a>
+                <a href="#" class="social-btn" onclick="event.preventDefault(); alert('YouTube login is available in the desktop application.');">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    Continue with YouTube
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025&ndash;2026 Content Zavod. All rights reserved.</p>
+        <p style="margin-top: 8px;">
+            <a href="/content-zavod-site/privacy.html">Privacy Policy</a> &middot;
+            <a href="/content-zavod-site/terms.html">Terms of Service</a>
+        </p>
+    </div>
+</body>
+</html>
